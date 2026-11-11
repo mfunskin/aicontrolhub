@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AIControlHub</title><link rel="stylesheet" href="/assets/style.css"></head>
+<body><main>
+<header><small>AI SYSTEM GOVERNANCE</small><h1>AIControlHub</h1><p>Inventory, control evidence, recorded risk decisions and release readiness.</p></header>
+<section><h2>Register an AI system</h2><form id="register">
+<label>Name <input name="name" minlength="3" value="Synthetic support assistant" required></label>
+<label>Owner <input name="owner" value="engineering-owner" required></label>
+<label>Impact <select name="impact"><option>low</option><option selected>moderate</option><option>high</option></select></label>
+<label class="wide">Purpose <textarea name="purpose" required minlength="10">Classify synthetic support requests before human review.</textarea></label>
+<button type="submit">Register system</button></form><p id="feedback" role="status"></p></section>
+<section><h2>System inventory</h2><button id="refresh" type="button">Refresh</button><div id="inventory"></div></section>
+<footer>Local development only. Identities are not authenticated. <a href="/docs">REST API documentation</a></footer>
+</main><script defer src="/assets/app.js"></script></body></html>
